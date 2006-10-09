@@ -2,7 +2,7 @@
 Summary:	XEmacs modes for Python programming languages
 Summary(pl):	XEmacsowe tryby Pythona
 Name:		xemacs-%{srcname}-pkg
-Version:	1.06
+Version:	1.07
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
@@ -37,12 +37,6 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 # remove .el file if corresponding .elc file exists
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
 
-install -d $RPM_BUILD_ROOT%{py_sitedir}
-cp lisp/python-modes/*py $RPM_BUILD_ROOT%{py_sitedir}
-
-%py_comp $RPM_BUILD_ROOT%{py_sitedir}
-%py_ocomp $RPM_BUILD_ROOT%{py_sitedir}
-
 %clean
 rm -fr $RPM_BUILD_ROOT
 
@@ -51,6 +45,3 @@ rm -fr $RPM_BUILD_ROOT
 %doc lisp/python-modes/{ChangeLog,pydoc-el-README}
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
-%{_datadir}/xemacs-packages/lisp/*/*.py
-%{py_sitedir}/*.pyc
-%{py_sitedir}/*.pyo
