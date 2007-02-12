@@ -1,6 +1,6 @@
 %define 	srcname	python-modes
 Summary:	XEmacs modes for Python programming languages
-Summary(pl.UTF-8):   XEmacsowe tryby Pythona
+Summary(pl.UTF-8):	XEmacsowe tryby Pythona
 Name:		xemacs-%{srcname}-pkg
 Version:	1.07
 Release:	1
