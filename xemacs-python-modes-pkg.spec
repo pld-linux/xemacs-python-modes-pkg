@@ -6,7 +6,7 @@ Version:	1.07
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
-Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
+Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 # Source0-md5:	574cac0c86f8e19c684017989ea25801
 URL:		http://www.xemacs.org/
 BuildRequires:	python-modules
