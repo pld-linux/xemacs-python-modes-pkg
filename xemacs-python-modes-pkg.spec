@@ -38,7 +38,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
