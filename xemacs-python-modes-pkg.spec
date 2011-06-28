@@ -2,12 +2,12 @@
 Summary:	XEmacs modes for Python programming languages
 Summary(pl.UTF-8):	XEmacsowe tryby Pythona
 Name:		xemacs-%{srcname}-pkg
-Version:	1.07
+Version:	1.14
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	574cac0c86f8e19c684017989ea25801
+# Source0-md5:	7da2e0ac09cb99a931405755f097981f
 URL:		http://www.xemacs.org/
 BuildRequires:	python-modules
 Requires:	python
